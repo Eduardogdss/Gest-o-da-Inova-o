@@ -1,0 +1,34 @@
+.text {
+  color:cornsilk;
+  text-decoration: none;
+  font-family:"Lucida Console", monospace;
+}
+
+.item {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.text:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 1vh;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.text:hover:after {
+  width: 100%;
+  background: gray;
+}
+
+.link {
+  color: #85B7D6;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
