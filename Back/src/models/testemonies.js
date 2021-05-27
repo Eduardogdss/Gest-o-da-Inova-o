@@ -10,7 +10,7 @@ const testimonySchema = new Schema({
     otherResearchers: [String],
     videoUrl: String,
     testimony: String,
-    otherInformations: String,
+    message: String,
     startDate: Date,
     endDate: Date,
     location: String,

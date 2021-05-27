@@ -10,7 +10,7 @@ const seedTestemoniess = [
     otherResearchers: ["Guilherme Goldman da Silva"],
     videoUrl: "https://youtube.com/NAOTEMVIDEOAINDA",
     testimony: "Lorem Ipsum.",
-    otherInformations: "",
+    message: "",
     startDate: Date.parse("2018-08-11"),
     endDate: Date.parse("2020-02-19"),
     location: "CT",
