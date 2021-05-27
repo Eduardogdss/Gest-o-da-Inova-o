@@ -1,37 +1,41 @@
-import styles from './Testemony.module.css'
-import { getHumanDate } from '../../utils/date'
-import { Detail } from '..'
+import styles from "./Testemony.module.css";
+import { getHumanDate } from "../../utils/date";
+import { Detail } from "..";
 
 const Testemony = ({ props }) => {
-  const startDate = getHumanDate(new Date(props.startDate))
-  const endDate = getHumanDate(new Date(props.endDate))
+  const startDate = getHumanDate(new Date(props.startDate));
+  const endDate = getHumanDate(new Date(props.endDate));
 
   const selectedInfo = [
     {
       value: "Orientador: ",
-      text: props.advisor
+      text: props.advisor,
     },
     {
       value: "Outros participantes: ",
-      text: props.otherResearchers
+      text: props.otherResearchers,
     },
     {
       value: "Testemunho: ",
-      text: props.testimony
+      text: props.testimony,
     },
     {
       value: "Local: ",
-      text: props.location
+      text: props.location,
     },
     {
       value: "Data de início: ",
-      text: startDate
+      text: startDate,
     },
     {
       value: "Data de Conclusão: ",
-      text: endDate
-    }
-  ]
+      text: endDate,
+    },
+    {
+      value: "Mensagem Motivacional: ",
+      text: props.message,
+    },
+  ];
 
   return (
     <div className={styles.testemonyContainer}>
@@ -54,7 +58,7 @@ const Testemony = ({ props }) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Testemony
+export default Testemony;
